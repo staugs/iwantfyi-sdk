@@ -1,0 +1,44 @@
+{
+  "name": "@iwantfyi/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for iwant.fyi -- the reference implementation of the iwant.fyi demand-side protocol v1.0. AI agents express structured purchase intent and receive matched supply across multiple sources.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "demand-protocol",
+    "mcp",
+    "model-context-protocol",
+    "ai-agent",
+    "commerce",
+    "iwant",
+    "iwant.fyi"
+  ],
+  "homepage": "https://iwant.fyi/protocol/v1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/staugs/iwant.fyi.git",
+    "directory": "packages/sdk"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": true,
+  "devDependencies": {
+    "typescript": "^5",
+    "vitest": "^4"
+  }
+}
